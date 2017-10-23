@@ -7,7 +7,86 @@ html {
   box-sizing: inherit;
 }
 
+body{
+  display: block;
+  text-align: center;
+}
+
 div {
   padding: .5rem;
   text-align: center;
+  border-radius: 8px;
+  padding: .4em .75em .3em;
+  margin: .5em 2em;
+  display: inline-block;
 }
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.primary {
+  color: #fff;
+  background-color: #000;
+}
+
+.primary:hover{
+  background-color: #000;
+}
+
+.subtle {
+  background-color: #ccc;
+}
+
+.subtle:hover{
+  background-color: #666;
+}
+
+.ghost a{
+  color: #333;
+  background-color: #fff;
+  padding: .4em .75em .3em;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.ghost a:hover{
+  color: #fff;
+  background-color: #666;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #666;
+}
+
+.ghost .btn-small{
+  font-size: .875rem;
+}
+
+.warning {
+  background-color: #f33;
+}
+
+.warning:hover{
+  background-color: #933;
+}
+
+.btn {
+  font-size: 1.125em;
+}
+
+.btn-small {
+  font-size: .875rem;
+}
+
+.btn-big {
+  font-size: 1.5rem;
+}
+- *Text sizes:* `1.125rem`, `.875rem`, `1.5rem`
+- *Colours:* `#fff`, `#000`, `#333`, `#666`, `#ccc`, `#f33`, `#933`
+- *Button padding:* `.4em .75em .3em`
+- *Button corner radius:* `8px`
+- *Button border width:* `3px`
+- *Expected class names:* `.btn`, `.btn-small`, `.btn-big`, `.btn-subtle`, `.btn-ghost`, `.btn-warning`
